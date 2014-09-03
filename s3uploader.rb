@@ -6,7 +6,10 @@ connection = Fog::Storage.new({
   :aws_access_key_id       => '',
   :aws_secret_access_key   => '' 
   })
-
+  
+#sc = connection.directories.get('petergriffin1')
+#connection.put_bucket_website(sc.key , 'index.htm')
+#puts "#{sc.key}"
 
 sc = connection.directories.get('petergriffin1')
 #sct = connection.directories
